@@ -31,5 +31,25 @@ set autoread "外部でファイルに変更が入った場合自動的に読み直す
 
 " その他
 " set mouse=a "マウス入力を受け付ける
-set t_Co=256 "256色表示
 
+" NeoBundle start
+set nocompatible
+filetype off
+
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+  call neobundle#rc(expand('~/.vim/bundle/'))
+endif
+" ここにプラグイン書く
+NeoBundle 'Lokaltog/powerline'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
+
+filetype plugin on
+filetype indent on
+" NeoBundle end
+
+set t_Co=256 "256色表示
+colorscheme molokai

@@ -1,5 +1,8 @@
 tap phinze/homebrew-cask
 install brew-cask
+tap sanemat/font
+install ricty
+
 
 install git
 install tmux
