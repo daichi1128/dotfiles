@@ -1,5 +1,8 @@
 autoload -U compinit; compinit # 便利補完を有効に
 setopt auto_cd # コマンドがなく、ディレクトリ名に一致した場合、そこへ移動する
+setopt auto_pushd # ディレクトリの移動履歴をpush
+setopt correct # コマンド名が間違っていた場合、優しく諭してくれる
+setopt nolistbeep # ビープ音ならさない
 
 autoload -U colors; colors # 色つける
 

@@ -3,7 +3,7 @@ install brew-cask
 tap sanemat/font
 install ricty
 
-
+install vim
 install git
 install tmux
 install zsh
