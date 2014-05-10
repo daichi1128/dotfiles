@@ -18,3 +18,15 @@ function history-all { history -E 1 } # ヒストリを全件表示
 
 # prompt
 PROMPT='%n@%m:%~$ '
+
+# alias
+alias ll='ls -G' # lsに色つける
+alias ll='ls -l'
+alias grep='grep --color=auto' # grepに色つける
+alias vi='vim' # vim使う
+alias history='history -E' # historyに時間表示
+
+# 環境変数
+export HOMEBREW_CASK_OPTS=--appdir=/Applications #homebrew_cask用の設定
+export CLICOLOR=1 # lsの色オン
+export LSCOLORS=DxGxcxdxCxegedabagacad # lsの色設定

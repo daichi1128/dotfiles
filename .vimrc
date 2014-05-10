@@ -50,7 +50,7 @@ NeoBundle 'chriskempson/vim-tomorrow-theme'
 filetype plugin on
 filetype indent on
 
-NeoBundleCheck
+NeoBundleCheck "vim起動時に未インストールのbundleの確認を行う
 " NeoBundle end
 
 set t_Co=256 "256色表示
