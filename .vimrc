@@ -49,6 +49,8 @@ NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 filetype plugin on
 filetype indent on
+
+NeoBundleCheck
 " NeoBundle end
 
 set t_Co=256 "256¿§É½¼¨
