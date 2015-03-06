@@ -24,6 +24,7 @@ alias ll='ls -G' # lsに色つける
 alias ll='ls -l'
 alias grep='grep --color=auto' # grepに色つける
 alias vi='vim' # vim使う
+alias tmux="TERM=screen-256color-bce tmux"
 alias history='history -E' # historyに時間表示
 
 # 環境変数

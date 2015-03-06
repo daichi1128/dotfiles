@@ -38,7 +38,10 @@ filetype off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+"  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  call neobundle#end()
 endif
 " ここにプラグイン書く
 NeoBundle 'Lokaltog/powerline'
@@ -55,3 +58,5 @@ NeoBundleCheck "vim起動時に未インストールのbundleの確認を行う
 
 set t_Co=256 "256色表示
 colorscheme molokai
+
+:set tags=/var/source/app/power/.tags
