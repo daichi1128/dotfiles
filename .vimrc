@@ -58,5 +58,3 @@ NeoBundleCheck "vim起動時に未インストールのbundleの確認を行う
 
 set t_Co=256 "256色表示
 colorscheme molokai
-
-:set tags=/var/source/app/power/.tags
