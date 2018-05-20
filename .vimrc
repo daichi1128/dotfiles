@@ -43,12 +43,15 @@ if has('vim_starting')
   NeoBundleFetch 'Shougo/neobundle.vim'
   call neobundle#end()
 endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
 " ここにプラグイン書く
 NeoBundle 'Lokaltog/powerline'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
+call neobundle#end()
 
 filetype plugin on
 filetype indent on
